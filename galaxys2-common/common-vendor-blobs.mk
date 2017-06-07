@@ -13,8 +13,7 @@
 # limitations under the License.
 
 PRODUCT_PACKAGES += \
-	libfimc \
-	libUMP
+	libfimc 
 
 LOCAL_PATH := vendor/samsung/galaxys2-common
 
@@ -38,7 +37,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libMali.so:system/lib/libMali.so \
     $(LOCAL_PATH)/proprietary/system/lib/libUMP.so:system/lib/libUMP.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
+
     $(LOCAL_PATH)/proprietary/system/lib/libfimc.so:system/lib/libfimc.so \
     $(LOCAL_PATH)/proprietary/system/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
     $(LOCAL_PATH)/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so
