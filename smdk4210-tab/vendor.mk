@@ -18,9 +18,8 @@
 PRODUCT_PACKAGES += \
     libTVOut \
     libhdmiclient \
+    libUMP \
     libfimc \
-    libmediayamahaservice \
     libhdmi \
-    libsamsungion \
 
 $(call inherit-product, vendor/samsung/smdk4210-tab/blobs.mk)

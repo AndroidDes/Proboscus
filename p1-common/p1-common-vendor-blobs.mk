@@ -24,7 +24,6 @@ PRODUCT_COPY_FILES += \
 # GPU
 PRODUCT_COPY_FILES += \
     vendor/samsung/p1-common/proprietary/pvrsrvinit:system/bin/pvrsrvinit \
-    vendor/samsung/p1-common/proprietary/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/samsung/p1-common/proprietary/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
     vendor/samsung/p1-common/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
     vendor/samsung/p1-common/proprietary/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
@@ -73,7 +72,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
-    vendor/samsung/p1-common/proprietary/BCM4329B1_002.002.023.0534.0590.hcd:system/bin/BCM4329B1_002.002.023.0534.0590.hcd
+    vendor/samsung/p1-common/proprietary/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd
 
 # TVout
 PRODUCT_COPY_FILES += \

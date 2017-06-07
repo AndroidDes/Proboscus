@@ -16,16 +16,17 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/i927/proprietary/libril.so:obj/lib/libril.so \
-    vendor/samsung/i927/proprietary/libsecril-client.so:obj/lib/libsecril-client.so \
-    vendor/samsung/i927/proprietary/cbd:root/sbin/cbd
+     vendor/samsung/i927/proprietary/cbd:root/sbin/cbd
+#    vendor/samsung/i927/proprietary/libril.so:obj/lib/libril.so \
+#    vendor/samsung/i927/proprietary/libsecril-client.so:obj/lib/libsecril-client.so \
+ 
 
 # HAL
 PRODUCT_COPY_FILES += \
     vendor/samsung/i927/proprietary/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \
     vendor/samsung/i927/proprietary/lib/hw/hwcomposer.tegra.so:system/lib/hw/hwcomposer.tegra.so \
     vendor/samsung/i927/proprietary/lib/hw/gps.tegra.so:system/lib/hw/gps.tegra.so \
-    vendor/samsung/i927/proprietary/lib/hw/camera.tegra.so:system/lib/hw/camera.tegra.so \
+    vendor/samsung/i927/proprietary/lib/hw/vendor-camera.tegra.so:system/lib/hw/camera.tegra.so \
     vendor/samsung/i927/proprietary/lib/hw/sensors.n1.so:system/lib/hw/sensors.n1.so
 
 # EGL
@@ -39,9 +40,11 @@ PRODUCT_COPY_FILES += \
 
 # RIL files
 PRODUCT_COPY_FILES += \
-    vendor/samsung/i927/proprietary/libril.so:system/lib/libril.so \
     vendor/samsung/i927/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/i927/proprietary/libsecril-client.so:system/lib/libsecril-client.so
+#    vendor/samsung/i927/proprietary/libril.so:system/lib/libril.so \
+
+
 
 # SENSORS
 PRODUCT_COPY_FILES += \

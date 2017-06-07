@@ -40,9 +40,7 @@ LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libfimc
-LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := system/lib/libfimc.so
+
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -50,9 +48,9 @@ LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libmediayamahaservice
+
 LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := system/lib/libmediayamahaservice.so
+LOCAL_SRC_FILES := system/lib/libfimc.so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES

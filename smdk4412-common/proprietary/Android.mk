@@ -14,9 +14,6 @@
 # limitations under the License.
 
 LOCAL_PATH := $(call my-dir)
-
-ifneq ($(filter i9300 n7100 n8000 n8013 i605 l900,$(TARGET_DEVICE)),)
-
 include $(CLEAR_VARS)
 LOCAL_MODULE := libTVOut
 LOCAL_MODULE_OWNER := samsung
